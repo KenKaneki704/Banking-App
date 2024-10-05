@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaz's Bank</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Style_pg2.css') }}">
+</head>
+<body>
+    <div class="rectangle">
+        <div class="Acc_Create">
+            <h1>Create an Account</hloca1>
+        </div>
+        
+
+        <form method="POST">
+
+            <div class="first_name">
+                <input type="text", name="firstname", placeholder="First Name" required>
+                <i class="alt-firstname"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAURJREFUSEvF1L8rRXEYx/HXTWaEwSiZLIpVRgulKBaLzWLwa7QopURS/gRZ5FcW/wAlGWQiIykMKKX8OKdc3c69557bOW6+2znn+3zen+fp85ycKp9clfVVCujFIjp+DF1gDsdJBisBjGKTIjOfGMRBOUgSoB43aIgRuUMb3uIgSYDQ4U7CGPpwlBYwjeUEwBRW0wIGsJ8A6MdhWkAdrtEUI3CPdrykBYR1I9gqIRCmaAi7WVKUr+3B0s8efOASszj5iz1I0ij7PSmmmcTD4nKAZswEm9oVzLkTjRHaI85xihU8lHITBxgLBNeDfIcpquQ8YRx70culAJPBr2GtEtUSd4axXfg+CmjFFWpSAl4RavyOKwrYwERK8XzZfGBwIf8QBdyiJSPgDN1xgHfUZgQ8F4Yj2sFXRvEi4/+6aH/STNU7+AYkwS0ZwQsJ3gAAAABJRU5ErkJggg=="/></i>
+            </div>
+
+            <div class="last_name">
+                <input type="text", name="lastname", placeholder="Last Name" required>
+                <i class="alt-lastname"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAURJREFUSEvF1L8rRXEYx/HXTWaEwSiZLIpVRgulKBaLzWLwa7QopURS/gRZ5FcW/wAlGWQiIykMKKX8OKdc3c69557bOW6+2znn+3zen+fp85ycKp9clfVVCujFIjp+DF1gDsdJBisBjGKTIjOfGMRBOUgSoB43aIgRuUMb3uIgSYDQ4U7CGPpwlBYwjeUEwBRW0wIGsJ8A6MdhWkAdrtEUI3CPdrykBYR1I9gqIRCmaAi7WVKUr+3B0s8efOASszj5iz1I0ij7PSmmmcTD4nKAZswEm9oVzLkTjRHaI85xihU8lHITBxgLBNeDfIcpquQ8YRx70culAJPBr2GtEtUSd4axXfg+CmjFFWpSAl4RavyOKwrYwERK8XzZfGBwIf8QBdyiJSPgDN1xgHfUZgQ8F4Yj2sFXRvEi4/+6aH/STNU7+AYkwS0ZwQsJ3gAAAABJRU5ErkJggg=="/></i>
+            </div>
+
+            <div class="email">
+                <input type="email", name="email-", placeholder="Email" required>
+                <i class="alt-mail"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUlJREFUSEvd1T8ohWEUx/GPJIPBZJBSMmCwW2xGpbBSNmVSBhbJRCmTsilWfxaZbBYzA5OQMpgMBsmfe/S8um73ute93eWe5an3vM/5nt/vvM/zNqlzNNW5vsYCjGEN/TXadoUFnESdfIse0FVj8Wz7DXoLAZ8pO4DrKkGhPhT81M5XkAFeMI3Df0LGsYu2coCs7gYW8V4G1JxmF77nx3fzxRTMYButOMMEnkpAOnCAYbxiFjvlFAR0EMfoxiNC/nkBZCjZ2Il7jOaauURmdUkFmap27GMEb5jHVoLMYRMtOMVkLv+cchUDMgtXsJw276V1Kq2RW83rOh7/C5C5EipCTaiKiG6j6+i+MKoCRJEeHOXUfKSZ3JYYfNWASo9FAwPu0ndfqRV/vRfziZn9OslxXa+jr0bCRe5ULxW7rmusW3x7Y/0y62LRF2qEQhkl8rgIAAAAAElFTkSuQmCC"/></i>
+            </div>
+
+            <div class="contact_no">
+                <input type="tel", name="telephone", placeholder="Contact No" required>
+                <i class="alt-contact"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAShJREFUSEu11b0uREEYgOFnuQUkEpHo0LgGhQuQqNyARiEUCipsg0Si0ChUCtdA4RI0egoi4QokfnbkrMjZ2d0Z55xTf/O+33w/Z1oa/loN88UEK9jDXAX5LRbD+ZjgHvMV4N2jP+yY4KsG+C87V7CPsyKBdewMSCb7Bps4KQGD4KCPpEcwrDTjeCvBJvFclyDAXkqwMbymCrpx/W6yjcMSbBWXdQkCp41TjGIJR52mT6QKhvUgd3qzmxwEj3goTDOYrmtMr3CBa3wW0JGiTGtYjoiS9uC9M5phoc6H1GcLx6WYpBLtFo1NqX9Ywo0/gUmCKTyl0LGAu0GC2B7kvBehJx+5gsTko2FJTW5E0PiDE57M8N+frZD+TbEj0RetArf3aM6U/Ev8DavcMBm78qY2AAAAAElFTkSuQmCC"/></i>
+            </div>
+
+            <div class="address">
+                <input type="text", name="address-", placeholder="Address" required>
+                <i class="alt-location"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAdRJREFUSEu11UuoTmEUBuDnSIqUlJKSwZmYGIjIhJJITmKsmMjAwICJgSiRjJRSGErmh8hl4DqQcplQGIgoMwZyi+JbWlvnbHv/e5/0f/VP/m9977vetd619oghn5Eh45sqwa9MqPe73oEJPBSCzRjDeowm0SvcwGVcGVTmQQrm4nyCD8IIgu342BTURjAPj7AI33EWJxGZxwkl+7ALM/Aay5pI2giuYiPeYgOet0hYkqVaUAguYUs9rolgFe7jJ1aWR0+wHAeTLDCi/kdS5RrcSeBQEfF/TxPBYRzCKexJ8HuYWcvuK1YnyQVsyySOdhE8TNCQ/wzjTdIT5CK2FgVrcRMPEBVoVFB5vLqM5v3Al4bsq5hQMasYIBz3oabwT3UmlqhOMBufexJE7Kcuguq+KlE09nHPElXGiLcrunpwHPtxBrt7NvlcmZEdZSaOlbIe6CKIlRA27GvTcNLdBI1m3+4imJZB8fBNev9ly6AtLa65hvm4hXWY1Mu2SV6Ip5iDbwXgNE7gXRItxt4y6TsxPR0Utn7fZ5KrmNg3MUCTfN2gJIYwll2o/ed0fQ/iflP+YjdV6/pF9un6/6zrpoSG8sGZSDR0ghYztf/d1YMpA9Yf/AaZ518Z/prMUAAAAABJRU5ErkJggg=="/></i>
+            </div>
+
+            <div class="age">
+                <input type="number", name="age-", placeholder="Age" required>
+                <i class="alt-calender"><img width="24" height="24" src="https://img.icons8.com/material-rounded/24/calendar--v1.png" alt="calendar--v1"/></i>
+            </div>
+
+            <div class="password">
+                <input type="password", name="password-", placeholder="Password" required>
+                <i class="alt-lock"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPtJREFUSEvt1TFKA0EYxfFfvEKwEEEIFqb1Cjams5HcQbASG7FRTKFYWMU7WNkFEvAKFjZ2oiBW4g2CGphAXHbzZVeCFplqmG/m/Wceb2Zq5txqc9Y3K2AXe9hKG7pDF7fRBmcBXOKwQOgEp9MgEaCNmyRwhuvU38dx6m9jUASJAPfYxAGuMiIjQAd9tKoChlj69nsZ7xmRFbzhA/WqgM+0sOikUT1MUSQQ1f8GsINzNKOMZ+qPKc69yfE8b1+xWlJ8PP0J6xEg9LUAnrsu7wQLwA9XFhZNBur/pOgFaxUv2jMa0UUbPRUX2CgJecARwqeipO706dGP9mvYFyImMRnCUhKsAAAAAElFTkSuQmCC"/></i>
+            </div>
+
+            <button type="submit" class="btn-get-id">Get Your Bank ID</button>
+        </form>
+    </div>
+
+
+</body>
+</html>

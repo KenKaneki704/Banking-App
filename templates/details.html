@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaz's Bank</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/details_css.css') }}">
+</head>
+<body>
+    <div class="rectangle">
+        <div class="panna">
+            <h1>PANNA</hloca1>
+        </div>
+        <form method="POST">
+            <div class="withdraw">
+                <input type="number", name="withdrawl-", placeholder="withdraw">
+            </div>
+
+            <div class="deposit">
+                <input type="number", name="deposit-", placeholder="Deposit Cash">
+            </div>
+
+            <div class="balance-check">
+                <p>To check Your balance<a onclick="check_bank_balance()"> Click Here</a></p>
+            </div>
+
+
+            
+            <button type="submit" class="perform-operation" id="refreshing">Perform Operation</button>
+
+        </form>
+    </div>
+    <script>
+        function check_bank_balance() {
+            var button = document.getElementById("bank-balance");
+            var text = "{{ Total_Balance }}$"
+            alert(text);
+        }
+    </script>
+
+</body>
+</html>

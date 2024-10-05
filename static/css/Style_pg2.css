@@ -1,0 +1,233 @@
+body{
+    background-image:url("digital-finance-and-banking-service-in-futuristic-background-bank-building-with-online-payment-transaction-secure-money-and-financial-innovation-technology-vector.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+
+}
+
+.rectangle {
+    height: 800px;
+    width: 400px;
+    margin: auto;
+    /* margin-left: 337px; */
+    margin-top: 70px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 10px;
+    backdrop-filter: blur(20px);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+
+
+}
+.Acc_Create h1{
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    line-height: 45px;
+    color:white;
+    font-weight: 700;
+}
+
+
+
+.first_name input {
+    margin-top: 10%;
+    width: 300px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    margin-left: 20px;
+    color: rgb(228, 251, 251);
+    padding-inline: 10px;
+}
+.first_name input::placeholder {
+    color: white;
+}
+
+.first_name i {
+    position: absolute;
+    right: 84px;
+    transform: translateY(175%);
+}
+
+
+.last_name input {
+    margin-top: 10%;
+    width: 300px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    margin-left: 20px;
+    color: rgb(228, 251, 251);
+    padding-inline: 10px;
+}
+.last_name input::placeholder {
+    color: white;
+}
+
+
+.last_name i {
+    position: absolute;
+    right: 84px;
+    transform: translateY(180%);
+}
+
+.email input {
+    margin-top: 10%;
+    width: 300px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    margin-left: 20px;
+    color: rgb(228, 251, 251);
+    padding-inline: 10px;
+}
+.email input::placeholder {
+    color: white;
+}
+
+.email i {
+    position: absolute;
+    right: 84px;
+    transform: translateY(187%);
+}
+
+.contact_no input {
+    margin-top: 10%;
+    width: 300px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    margin-left: 20px;
+    color: rgb(228, 251, 251);
+    padding-inline: 10px;
+}
+.contact_no input::placeholder {
+    color: white;
+}
+
+.contact_no i {
+    position: absolute;
+    right: 84px;
+    transform: translateY(177%);
+}
+
+
+
+.address input {
+    margin-top: 10%;
+    width: 300px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    margin-left: 20px;
+    color: rgb(228, 251, 251);
+    padding-inline: 10px;
+}
+.address input::placeholder {
+    color: white;
+}
+
+.address i {
+    position: absolute;
+    right: 84px;
+    transform: translateY(177%);
+}
+
+
+
+.age input {
+    margin-top: 10%;
+    width: 300px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    margin-left: 20px;
+    color: rgb(228, 251, 251);
+    padding-inline: 10px;
+}
+.age input::placeholder {
+    color: white;
+}
+
+.age i {
+    position: absolute;
+    right: 84px;
+    transform: translateY(178%);
+}
+
+
+
+
+.password input {
+    margin-top: 10%;
+    width: 300px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    margin-left: 20px;
+    color: rgb(228, 251, 251);
+    padding-inline: 10px;
+}
+.password input::placeholder {
+    color: white;
+}
+
+
+.password i {
+    position: absolute;
+    right: 84px;
+    transform: translateY(175%);
+}
+
+
+.btn-get-id {
+    margin-bottom: 15px;
+    margin-top: 40px;
+    width: 100%;
+    border-radius: 40px;
+    height: 45px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2s);
+    cursor: pointer;
+    font-size: 16;
+    color: #333;
+    font-weight: 600;
+}
+
+.btn-get-id:hover {
+     background-color: #3b8df1;
+     color: white;
+}
+
+.btn {
+    padding: 10px 60px;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+}

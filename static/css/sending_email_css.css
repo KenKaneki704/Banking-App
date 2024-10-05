@@ -1,0 +1,36 @@
+body{
+    background-image:url("digital-finance-and-banking-service-in-futuristic-background-bank-building-with-online-payment-transaction-secure-money-and-financial-innovation-technology-vector.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+
+}
+.rectangle {
+    height: 400px;
+    width: 350px;
+    margin: auto;
+    /* margin-left: 337px; */
+    margin-top: 130px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 10px;
+    backdrop-filter: blur(20px);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+
+
+}
+.panna h1{
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    line-height: 60px;
+    color:white;
+    font-weight: 700;
+}
+
+.redirecting {
+    color: white;
+    font-size: 27px;
+    text-align: center;
+    
+}

@@ -1,0 +1,105 @@
+body{
+    background-image:url("digital-finance-and-banking-service-in-futuristic-background-bank-building-with-online-payment-transaction-secure-money-and-financial-innovation-technology-vector.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+
+}
+
+.rectangle {
+    height: 400px;
+    width: 350px;
+    margin: auto;
+    /* margin-left: 337px; */
+    margin-top: 130px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 10px;
+    backdrop-filter: blur(20px);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+
+
+}
+.panna h1{
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    line-height: 60px;
+    color:white;
+    font-weight: 700;
+}
+
+
+
+.withdraw input {
+    margin-top: 10%;
+    width: 300px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    margin-left: 20px;
+    color: rgb(228, 251, 251);
+    padding-inline: 10px;
+}
+.withdraw input::placeholder {
+    color: white;
+}
+
+
+.deposit input {
+    margin-top: 10%;
+    width: 300px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    margin-left: 20px;
+    color: rgb(228, 251, 251);
+    padding-inline: 10px;
+}
+.deposit input::placeholder {
+    color: white;
+}
+
+.perform-operation {
+    margin-bottom: 15px;
+    margin-top: 30px;
+    width: 100%;
+    border-radius: 40px;
+    height: 45px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2s);
+    cursor: pointer;
+    font-size: 16;
+    color: #333;
+    font-weight: 600;
+}
+
+.perform-operation:hover {
+    background-color: #3b8df1;
+    color: white;
+}
+
+
+.balance-check {
+    color: white;
+    margin-top: 20px;
+    font-size: 14.5px;
+    margin-left: 25px;
+    
+}
+.balance-check p a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.balance-check p a:hover{
+    text-decoration: underline;
+    font-style: italic;
+}
