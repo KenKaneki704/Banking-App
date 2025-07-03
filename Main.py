@@ -4,8 +4,8 @@ import random
 import smtplib
 from email.message import EmailMessage
 import ssl
-email_sender = "yasoobkazmi1243@gmail.com"
-email_password = 'cmwa rowv esmh kuud'
+email_sender = "#Your Gmail"
+email_password = '#Use your Pass Key here not the password'
 
 
 app = Flask(__name__)
