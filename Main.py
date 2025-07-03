@@ -4,8 +4,8 @@ import random
 import smtplib
 from email.message import EmailMessage
 import ssl
-email_sender = "#Your Gmail"
-email_password = '#Your Pass Key not password'
+email_sender = "yasoobkazmi1243@gmail.com"
+email_password = 'cmwa rowv esmh kuud'
 
 
 app = Flask(__name__)
@@ -13,6 +13,45 @@ conn = sqlite3.connect('Bank_Details_DB.db', check_same_thread=False)
 c = conn.cursor()
 
 app.secret_key = "dev"
+
+import sqlite3
+
+def setup_database():
+    """
+    Connects to the SQLite database and creates the 'customer_details' table
+    if it doesn't already exist.
+    """
+    try:
+        conn = sqlite3.connect('Bank_Details_DB.db')
+        c = conn.cursor()
+
+        c.execute('''
+            CREATE TABLE IF NOT EXISTS customer_details (
+                bank_amount INTEGER DEFAULT 0,
+                unique_id INTEGER PRIMARY KEY,
+                first_name TEXT NOT NULL,
+                last_name TEXT NOT NULL,
+                email TEXT NOT NULL UNIQUE,
+                contact_no TEXT NOT NULL,
+                address TEXT NOT NULL,
+                age INTEGER NOT NULL,
+                password TEXT NOT NULL
+            )
+        ''')
+        conn.commit()
+        print("Database 'Bank_Details_DB.db' and table 'customer_details' created successfully (if they didn't exist).")
+
+    except sqlite3.Error as e:
+        print(f"An error occurred: {e}")
+    finally:
+        if conn:
+            conn.close()
+
+if __name__ == "__main__":
+    setup_database()
+
+
+
 
 @app.route('/', methods=["POST", "GET"])
 def index():
@@ -139,4 +178,3 @@ if __name__ == "__main__":
 conn.commit()
 
 conn.close()
-
